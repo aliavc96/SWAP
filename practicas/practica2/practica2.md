@@ -31,7 +31,7 @@ clave
 En caso de que haya algún error (por equivocación con el ssh): rm -rf ~/.ssh, aunque
 en mi caso no he tenido ningún problema:
 
-![captura 3](https://github.com/aliavc96/SWAP/blob/master/practicas/practica2/genclavePubyPriv.PNG)
+![captura 3](https://github.com/aliavc96/SWAP/blob/master/practicas/practica2/sshSinContrasenia.PNG)
 
 
 Para realizar una tarea programada que se realice de forma automática, utilizamos Cron
