@@ -1,0 +1,32 @@
+Librerías y frameworks en JavaScript:
+PM2 --> PM2 es un gestor de procesos de producción para aplicaciones Node.js con un equilibrador de carga incorporado. Le permite mantener las aplicaciones vivas para siempre, recargarlas sin tiempo de inactividad y para facilitar las tareas comunes del administrador del sistema.
+
+Angular.js --> Éste es el framework MVW (Modelo, Vista, Lo que sea) de Google, que se dedica para crear y matener apllicaciones web de una sola página, y tiene por objetivo potenciar a las aplicaciones basadas en navegador con capacidad de Modelo Vista Controlador.
+Este framework en general adapata y amplía el HTML tradicional para servir mejor el contenido dinámico a través de un dta binding idireccional que permite la sincronización automática de modelos y vistas.
+
+React.js --> Es una librería de Facebook de código abierto orientada a la gestión del UI. Instagram se ha beneficiado de la misma también.
+Esta librería ofrece grandes beneficcios en performance y modularidad y promueve un flujo muy claro de datos y eventos, facilitando la planeación y desarrollo de apps complejas. Generalmente está orientada a la visualización. Si estamos iniciando un proyecto podemos basarnos en la arquitectura Flux, pero si ya tenemos un proyecto usando un Framework MVC como AngularJS podemos dejar AngularJS como Controlador y que ReactJS se encargue de las vistas.
+Esta librería implementa el Virtual DOM, que es un método mucho más eficiente que el tradiccional DOM.
+
+Librerías y frameworks en PHP:
+
+FuelPHP --> Es un framework de código abierto diseñado para el desarrollo web escrito en PHP, basado en las mejores ideas de otros frameworks, el cual implementa el patrón HMVC (Hierarchical model–view–controller), de modo que hace que el desarrollo sea lo más fácil, cómodo y eficiente posible.
+Casi todas las clases en el paquete básico de FuelPHP pueden extenderse sin tener que cambiar una sola línea de código donde se utiliza. Se pueden empaquetar una mayor funcionalidad en paquetes que amplían o reemplazar el núcleo FuelPHP y se puede mantener una aplicación modular dividiéndolo en módulos de aplicación. Paquetes y módulos son también una gran manera de permitir la reutilización del código.
+
+Librerías y frameworks en C:
+
+Phalcom --> Un framework diseñado para la velocidad. Es con seguridad el framework más rápido existente hoy día. Ofrece la mayoría de los recursos actuales necesarios para desarrollar un proyecto ágil y fresco (routing, controladores, vista de plantillas, ORM, caché, etc…).
+No es la primera elección de muchas empresas y desarrolladores, pero seguramente será por moda. Tras muchas pruebas sigue siendo el framework con más margen de rendimiento a la hora de desarrollar nuestro proyecto web sea cual sea su tamaño y complejidad, ya que cuenta con todas las características necesarias para ello, además de un entorno intuitivo y de fácil aprendizaje.
+
+
+bibliografía:
+https://github.com/Unitech/pm2
+https://es.wikipedia.org/wiki/AngularJS
+https://platzi.com/blog/intro-react-js/
+http://www.arquitecturajava.com/que-es-el-virtual-dom-y-como-funciona/
+https://www.genbetadev.com/javascript/los-10-frameworks-librerias-mas-populares-de-javascript
+https://github.com/fuelphp
+https://en.wikipedia.org/wiki/Hierarchical_model%E2%80%93view%E2%80%93controller
+https://www.ecured.cu/FuelPHP
+https://openwebinars.net/blog/los-10-mejores-frameworks-php-que-solicitan-las-empresas/
+http://phalcon-documentacion-en-espanol.readthedocs.io/es/latest/reference/motivation.html

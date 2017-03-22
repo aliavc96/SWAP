@@ -1,0 +1,30 @@
+Buscar ejemplos de balanceadores software y hardware:
+
+BIG-IP LTM --> BIG-IP Local Traffic Manager (LTM) le ofrece un profundo conocimiento del tráfico de la aplicación de su red, así como un control sobre cómo se maneja. Transforma el caótico volumen de tráfico de red en flujos de datos ensamblados y, a continuación, toma decisiones inteligentes sobre la gestión del tráfico mediante la selección del destino correcto según el rendimiento del servidor, la seguridad y la disponibilidad.
+Dado que BIG-IP LTM es un proxy completo, puede inspeccionar, gestionar e informar sobre el tráfico de la aplicación que entra y sale de su red. Desde decisiones básicas sobre el equilibrio de carga a decisiones complejas sobre la gestión del tráfico según el cliente, el servidor o el estado de la aplicación, BIG-IP LTM le ofrece un control pormenorizado sobre el tráfico de la aplicación.
+Por ejemplo, si quiere dirigir el tráfico según la URL solicitada o registrar respuestas específicas del servidor en un sistema de informes, BIG-IP LTM tiene la arquitectura y las herramientas que necesita para ello.
+
+LoadMaster R320 de KEMP --> Un balanceador de carga desarrollado por KEMP y Dell basado en la variante de alto rendimiento del servidor Dell PowerEdgeTM 320 incluye los últimos avances en balanceo de carga de Nivel 4 y 7, switching de contenido, aceleración SSL, switching de contenido en Nivel 7, caching, compresión, IPS, IP y persistencia de nivel 7.
+LoadMaster R320 de KEMP permite a los clusters de centros de datos distribuir de forma eficiente e inteligente el tráfico de la red entre los servidores de aplicaciones y la web. Una capa de optimización de recurso delante de los servidores de aplicaciones y de la infraestructura otorga a los administradores de TI mayor control para adaptarse a los cambios de la red y conseguir el mejor rendimiento de la infraestructura y de la web.
+
+Buscar productos comerciales para servidores de aplicaciones:
+
+Firewall Cisco ASA --> Gracias al firewall Cisco ASA, podrá beneficiarse de un cortafuegos físico dedicado a la protección de su servidor. 
+El despliegue y la activación de este dispositivo son realizados por OVH. El Cisco ASA, que tiene un mayor rendimiento que un firewall de software, no puede ser desactivado por un fallo humano o un programa malintencionado. 
+Además, la protección está activa independientemente de los recursos disponibles en su servidor dedicado.
+
+Servidores para rack Dell PowerEdge --> Haga que las aplicaciones para pymes y oficinas y sucursales remotas sean más rápidas con un servidor de montaje en rack de entrada de 1 socket, alta disponibilidad potente y ampliable.
+
+Buscar productos comerciales para servidores de almacenamiento:
+
+Expansión JBOD para servidores --> Clientes que busquen una cabina de almacenamiento con conexión directa y con eficiencia energética que ofrezca el rendimiento óptimo para las aplicaciones más exigentes. (a partir de 1878 euros)
+
+Backup y recuperación en disco --> Tenemos por ejemplo al Dell PowerVault DL4000: Implemente un respaldo y una recuperación integrales de datos y aplicaciones para los servidores virtuales y físicos que potencian su negocio con el servidor PowerVault™ DL4000.
+
+
+Bibliografía:
+
+http://www.networkworld.es/networking/kemp-y-dell-desarrollan-un-balanceador-de-carga
+https://f5.com/es/products/big-ip/local-traffic-manager-ltm
+https://www.ovh.es/servidores_dedicados/firewall_servidores_dedicados.xml
+http://www.dell.com/es/empresas/p/storage-products
