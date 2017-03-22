@@ -1,28 +1,44 @@
 Buscar ejemplos de balanceadores software y hardware:
 
-BIG-IP LTM --> BIG-IP Local Traffic Manager (LTM) le ofrece un profundo conocimiento del tr·fico de la aplicaciÛn de su red, asÌ como un control sobre cÛmo se maneja. Transforma el caÛtico volumen de tr·fico de red en flujos de datos ensamblados y, a continuaciÛn, toma decisiones inteligentes sobre la gestiÛn del tr·fico mediante la selecciÛn del destino correcto seg˙n el rendimiento del servidor, la seguridad y la disponibilidad.
-Dado que BIG-IP LTM es un proxy completo, puede inspeccionar, gestionar e informar sobre el tr·fico de la aplicaciÛn que entra y sale de su red. Desde decisiones b·sicas sobre el equilibrio de carga a decisiones complejas sobre la gestiÛn del tr·fico seg˙n el cliente, el servidor o el estado de la aplicaciÛn, BIG-IP LTM le ofrece un control pormenorizado sobre el tr·fico de la aplicaciÛn.
-Por ejemplo, si quiere dirigir el tr·fico seg˙n la URL solicitada o registrar respuestas especÌficas del servidor en un sistema de informes, BIG-IP LTM tiene la arquitectura y las herramientas que necesita para ello.
+BIG-IP LTM --> BIG-IP Local Traffic Manager (LTM) le ofrece un profundo conocimiento del tr√°fico de la aplicaci√≥n de su red, as√≠ como un
+control sobre c√≥mo se maneja. Transforma el ca√≥tico volumen de tr√°fico de red en flujos de datos ensamblados y, a continuaci√≥n, toma
+decisiones inteligentes sobre la gesti√≥n del tr√°fico mediante la selecci√≥n del destino correcto seg√∫n el rendimiento del servidor, la
+seguridad y la disponibilidad.
+Dado que BIG-IP LTM es un proxy completo, puede inspeccionar, gestionar e informar sobre el tr√°fico de la aplicaci√≥n que entra y sale de
+su red. Desde decisiones b√°sicas sobre el equilibrio de carga a decisiones complejas sobre la gesti√≥n del tr√°fico seg√∫n el cliente, el
+servidor o el estado de la aplicaci√≥n, BIG-IP LTM le ofrece un control pormenorizado sobre el tr√°fico de la aplicaci√≥n.
+Por ejemplo, si quiere dirigir el tr√°fico seg√∫n la URL solicitada o registrar respuestas espec√≠ficas del servidor en un sistema de
+informes, BIG-IP LTM tiene la arquitectura y las herramientas que necesita para ello.
 
-LoadMaster R320 de KEMP --> Un balanceador de carga desarrollado por KEMP y Dell basado en la variante de alto rendimiento del servidor Dell PowerEdgeTM 320 incluye los ˙ltimos avances en balanceo de carga de Nivel 4 y 7, switching de contenido, aceleraciÛn SSL, switching de contenido en Nivel 7, caching, compresiÛn, IPS, IP y persistencia de nivel 7.
-LoadMaster R320 de KEMP permite a los clusters de centros de datos distribuir de forma eficiente e inteligente el tr·fico de la red entre los servidores de aplicaciones y la web. Una capa de optimizaciÛn de recurso delante de los servidores de aplicaciones y de la infraestructura otorga a los administradores de TI mayor control para adaptarse a los cambios de la red y conseguir el mejor rendimiento de la infraestructura y de la web.
+LoadMaster R320 de KEMP --> Un balanceador de carga desarrollado por KEMP y Dell basado en la variante de alto rendimiento del servidor
+Dell PowerEdgeTM 320 incluye los √∫ltimos avances en balanceo de carga de Nivel 4 y 7, switching de contenido, aceleraci√≥n SSL, switching
+de contenido en Nivel 7, caching, compresi√≥n, IPS, IP y persistencia de nivel 7.
+LoadMaster R320 de KEMP permite a los clusters de centros de datos distribuir de forma eficiente e inteligente el tr√°fico de la red
+entre los servidores de aplicaciones y la web. Una capa de optimizaci√≥n de recurso delante de los servidores de aplicaciones y de la
+infraestructura otorga a los administradores de TI mayor control para adaptarse a los cambios de la red y conseguir el mejor rendimiento
+de la infraestructura y de la web.
 
 Buscar productos comerciales para servidores de aplicaciones:
 
-Firewall Cisco ASA --> Gracias al firewall Cisco ASA, podr· beneficiarse de un cortafuegos fÌsico dedicado a la protecciÛn de su servidor. 
-El despliegue y la activaciÛn de este dispositivo son realizados por OVH. El Cisco ASA, que tiene un mayor rendimiento que un firewall de software, no puede ser desactivado por un fallo humano o un programa malintencionado. 
-Adem·s, la protecciÛn est· activa independientemente de los recursos disponibles en su servidor dedicado.
+Firewall Cisco ASA --> Gracias al firewall Cisco ASA, podr√° beneficiarse de un cortafuegos f√≠sico dedicado a la protecci√≥n de su
+servidor. 
+El despliegue y la activaci√≥n de este dispositivo son realizados por OVH. El Cisco ASA, que tiene un mayor rendimiento que un firewall
+de software, no puede ser desactivado por un fallo humano o un programa malintencionado. 
+Adem√°s, la protecci√≥n est√° activa independientemente de los recursos disponibles en su servidor dedicado.
 
-Servidores para rack Dell PowerEdge --> Haga que las aplicaciones para pymes y oficinas y sucursales remotas sean m·s r·pidas con un servidor de montaje en rack de entrada de 1 socket, alta disponibilidad potente y ampliable.
+Servidores para rack Dell PowerEdge --> Haga que las aplicaciones para pymes y oficinas y sucursales remotas sean m√°s r√°pidas con un
+servidor de montaje en rack de entrada de 1 socket, alta disponibilidad potente y ampliable.
 
 Buscar productos comerciales para servidores de almacenamiento:
 
-ExpansiÛn JBOD para servidores --> Clientes que busquen una cabina de almacenamiento con conexiÛn directa y con eficiencia energÈtica que ofrezca el rendimiento Ûptimo para las aplicaciones m·s exigentes. (a partir de 1878 euros)
+Expansi√≥n JBOD para servidores --> Clientes que busquen una cabina de almacenamiento con conexi√≥n directa y con eficiencia energ√©tica
+que ofrezca el rendimiento √≥ptimo para las aplicaciones m√°s exigentes. (a partir de 1878 euros)
 
-Backup y recuperaciÛn en disco --> Tenemos por ejemplo al Dell PowerVault DL4000: Implemente un respaldo y una recuperaciÛn integrales de datos y aplicaciones para los servidores virtuales y fÌsicos que potencian su negocio con el servidor PowerVaultô DL4000.
+Backup y recuperaci√≥n en disco --> Tenemos por ejemplo al Dell PowerVault DL4000: Implemente un respaldo y una recuperaci√≥n integrales
+de datos y aplicaciones para los servidores virtuales y f√≠sicos que potencian su negocio con el servidor PowerVault‚Ñ¢ DL4000.
 
 
-BibliografÌa:
+Bibliograf√≠a:
 
 http://www.networkworld.es/networking/kemp-y-dell-desarrollan-un-balanceador-de-carga
 https://f5.com/es/products/big-ip/local-traffic-manager-ltm
