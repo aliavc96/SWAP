@@ -1,25 +1,41 @@
-LibrerÌas y frameworks en JavaScript:
-PM2 --> PM2 es un gestor de procesos de producciÛn para aplicaciones Node.js con un equilibrador de carga incorporado. Le permite mantener las aplicaciones vivas para siempre, recargarlas sin tiempo de inactividad y para facilitar las tareas comunes del administrador del sistema.
+Librer√≠as y frameworks en JavaScript:
+PM2 --> PM2 es un gestor de procesos de producci√≥n para aplicaciones Node.js con un equilibrador de carga incorporado. Le permite
+mantener las aplicaciones vivas para siempre, recargarlas sin tiempo de inactividad y para facilitar las tareas comunes del
+administrador del sistema.
 
-Angular.js --> …ste es el framework MVW (Modelo, Vista, Lo que sea) de Google, que se dedica para crear y matener apllicaciones web de una sola p·gina, y tiene por objetivo potenciar a las aplicaciones basadas en navegador con capacidad de Modelo Vista Controlador.
-Este framework en general adapata y amplÌa el HTML tradicional para servir mejor el contenido din·mico a travÈs de un dta binding idireccional que permite la sincronizaciÛn autom·tica de modelos y vistas.
+Angular.js --> √âste es el framework MVW (Modelo, Vista, Lo que sea) de Google, que se dedica para crear y matener apllicaciones web de
+una sola p√°gina, y tiene por objetivo potenciar a las aplicaciones basadas en navegador con capacidad de Modelo Vista Controlador.
+Este framework en general adapata y ampl√≠a el HTML tradicional para servir mejor el contenido din√°mico a trav√©s de un dta binding
+idireccional que permite la sincronizaci√≥n autom√°tica de modelos y vistas.
 
-React.js --> Es una librerÌa de Facebook de cÛdigo abierto orientada a la gestiÛn del UI. Instagram se ha beneficiado de la misma tambiÈn.
-Esta librerÌa ofrece grandes beneficcios en performance y modularidad y promueve un flujo muy claro de datos y eventos, facilitando la planeaciÛn y desarrollo de apps complejas. Generalmente est· orientada a la visualizaciÛn. Si estamos iniciando un proyecto podemos basarnos en la arquitectura Flux, pero si ya tenemos un proyecto usando un Framework MVC como AngularJS podemos dejar AngularJS como Controlador y que ReactJS se encargue de las vistas.
-Esta librerÌa implementa el Virtual DOM, que es un mÈtodo mucho m·s eficiente que el tradiccional DOM.
+React.js --> Es una librer√≠a de Facebook de c√≥digo abierto orientada a la gesti√≥n del UI. Instagram se ha beneficiado de la misma
+tambi√©n.
+Esta librer√≠a ofrece grandes beneficcios en performance y modularidad y promueve un flujo muy claro de datos y eventos, facilitando la
+planeaci√≥n y desarrollo de apps complejas. Generalmente est√° orientada a la visualizaci√≥n. Si estamos iniciando un proyecto podemos
+basarnos en la arquitectura Flux, pero si ya tenemos un proyecto usando un Framework MVC como AngularJS podemos dejar AngularJS como
+Controlador y que ReactJS se encargue de las vistas.
+Esta librer√≠a implementa el Virtual DOM, que es un m√©todo mucho m√°s eficiente que el tradiccional DOM.
 
-LibrerÌas y frameworks en PHP:
+Librer√≠as y frameworks en PHP:
 
-FuelPHP --> Es un framework de cÛdigo abierto diseÒado para el desarrollo web escrito en PHP, basado en las mejores ideas de otros frameworks, el cual implementa el patrÛn HMVC (Hierarchical modelñviewñcontroller), de modo que hace que el desarrollo sea lo m·s f·cil, cÛmodo y eficiente posible.
-Casi todas las clases en el paquete b·sico de FuelPHP pueden extenderse sin tener que cambiar una sola lÌnea de cÛdigo donde se utiliza. Se pueden empaquetar una mayor funcionalidad en paquetes que amplÌan o reemplazar el n˙cleo FuelPHP y se puede mantener una aplicaciÛn modular dividiÈndolo en mÛdulos de aplicaciÛn. Paquetes y mÛdulos son tambiÈn una gran manera de permitir la reutilizaciÛn del cÛdigo.
+FuelPHP --> Es un framework de c√≥digo abierto dise√±ado para el desarrollo web escrito en PHP, basado en las mejores ideas de otros
+frameworks, el cual implementa el patr√≥n HMVC (Hierarchical model‚Äìview‚Äìcontroller), de modo que hace que el desarrollo sea lo m√°s f√°cil,
+c√≥modo y eficiente posible.
+Casi todas las clases en el paquete b√°sico de FuelPHP pueden extenderse sin tener que cambiar una sola l√≠nea de c√≥digo donde se utiliza.
+Se pueden empaquetar una mayor funcionalidad en paquetes que ampl√≠an o reemplazar el n√∫cleo FuelPHP y se puede mantener una aplicaci√≥n
+modular dividi√©ndolo en m√≥dulos de aplicaci√≥n. Paquetes y m√≥dulos son tambi√©n una gran manera de permitir la reutilizaci√≥n del c√≥digo.
 
-LibrerÌas y frameworks en C:
+Librer√≠as y frameworks en C:
 
-Phalcom --> Un framework diseÒado para la velocidad. Es con seguridad el framework m·s r·pido existente hoy dÌa. Ofrece la mayorÌa de los recursos actuales necesarios para desarrollar un proyecto ·gil y fresco (routing, controladores, vista de plantillas, ORM, cachÈ, etcÖ).
-No es la primera elecciÛn de muchas empresas y desarrolladores, pero seguramente ser· por moda. Tras muchas pruebas sigue siendo el framework con m·s margen de rendimiento a la hora de desarrollar nuestro proyecto web sea cual sea su tamaÒo y complejidad, ya que cuenta con todas las caracterÌsticas necesarias para ello, adem·s de un entorno intuitivo y de f·cil aprendizaje.
+Phalcom --> Un framework dise√±ado para la velocidad. Es con seguridad el framework m√°s r√°pido existente hoy d√≠a. Ofrece la mayor√≠a de
+los recursos actuales necesarios para desarrollar un proyecto √°gil y fresco (routing, controladores, vista de plantillas, ORM, cach√©,
+etc‚Ä¶).
+No es la primera elecci√≥n de muchas empresas y desarrolladores, pero seguramente ser√° por moda. Tras muchas pruebas sigue siendo el
+framework con m√°s margen de rendimiento a la hora de desarrollar nuestro proyecto web sea cual sea su tama√±o y complejidad, ya que
+cuenta con todas las caracter√≠sticas necesarias para ello, adem√°s de un entorno intuitivo y de f√°cil aprendizaje.
 
 
-bibliografÌa:
+bibliograf√≠a:
 https://github.com/Unitech/pm2
 https://es.wikipedia.org/wiki/AngularJS
 https://platzi.com/blog/intro-react-js/

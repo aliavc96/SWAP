@@ -1,24 +1,29 @@
-CÛmo analizar el nivel de carga de cada uno de los subsistemas en el servidor:
+C√≥mo analizar el nivel de carga de cada uno de los subsistemas en el servidor:
 
 Como sabemos, la escalabilidad es la capacidad de un sistema para manejar la carga y el esfuerzo para adaptarse al nuevo nvel de carga.
 
 Para analizar la carga:
-- Observar el porcentaje de uso que est· tomando la CPU
-- Observar el porcentaje de suo que est· teniendo la RAM
+- Observar el porcentaje de uso que est√° tomando la CPU
+- Observar el porcentaje de suo que est√° teniendo la RAM
 - Controlar el ancho de banda (puede ser probable que no sea un componente hardware el culpable de la sobrecarga)
 
 Para ello podemos utilizar las siguientes herramientas:
 
-Siege --> Una herramienta utilizada ampliamente por desarrolladores (y algunos hacktivistas) para realizaciÛn de pruebas de carga. CortesÌa de JoeDog Software.
-Con ella podremos especificar el tiempo que dudar· la pruea, la cantidad de conexiones concurrentes, podremos hacer que no ocurra ning˙n retraso entre cada usuario simulado
+Siege --> Una herramienta utilizada ampliamente por desarrolladores (y algunos hacktivistas) para realizaci√≥n de pruebas de carga. Cortes√≠a
+de JoeDog Software.
+Con ella podremos especificar el tiempo que dudar√° la pruea, la cantidad de conexiones concurrentes, podremos hacer que no ocurra ning√∫n
+retraso entre cada usuario simulado
 
 ApacheBench --> Una herramienta muy sencilla capaz de medir el rendimiento de un servidor 
-Introduciendo este comando: ab -n 100 -c 10 http://www.paginaweb.com/ generariamos 100 llamadas a la web distribuidas en 10 hilos y es esta capacidad de concurrencia la que nos permitir· comprobar condiciones de carrera o bloqueos, ya que el comportamiento de las peticiones es m·s natural que si se realizan 100 seguidas en un bucle.
+Introduciendo este comando: ab -n 100 -c 10 http://www.paginaweb.com/ generariamos 100 llamadas a la web distribuidas en 10 hilos y es esta
+capacidad de concurrencia la que nos permitir√° comprobar condiciones de carrera o bloqueos, ya que el comportamiento de las peticiones es
+m√°s natural que si se realizan 100 seguidas en un bucle.
 
-loadtest.js --> Es interesante, pues aparte de utilizar los par·metros m·s importantes compatibles con ApacheBench, tiene una opciÛn en la que nos permite enviar un n˙mero fijho de peticiones por segundo al servidor donde se analiza el nivel de carga.
+loadtest.js --> Es interesante, pues aparte de utilizar los par√°metros m√°s importantes compatibles con ApacheBench, tiene una opci√≥n en la
+que nos permite enviar un n√∫mero fijho de peticiones por segundo al servidor donde se analiza el nivel de carga.
 
 
-BibliografÌa:
+Bibliograf√≠a:
 https://m.genbetadev.com/herramientas/apachebench-una-sencilla-herramienta-para-testear-servidores-web
 http://codehero.co/como-hacer-pruebas-de-carga-servidores-web/
 http://pinchito.es/2013/pruebas-de-carga.html
