@@ -39,16 +39,16 @@ En mi caso no he tenido ningún problema:
 
 Para configurar una tarea programada que se realice de forma automática, utilizamos Cron.
 
-Para llevar a cabo el funcionamiento de cron he editado el archivo crontab de la máquina 2 para que en cada minuto ejecute el siguiente
-comando: 
+Para llevar a cabo el funcionamiento de cron he editado el archivo crontab de la máquina 2 de modo que en cada minuto ejecute el
+siguiente comando: 
 
 `rsync -avz -e ssh aliavc96@maquina2:/var/www/ /var/www/`
 
-Lo que hace es copiar el directorio especificado de la máquina 1 en la máquina 2 de forma automática en cada minuto. El propósito de
-esta ejecución es mantener una copia de seguridad de /var/www/ en 
-caso de que la máquina 1 falle.
+Lo que hace es copiar el directorio especificado de la máquina 1 en la máquina 2 de forma automática y periódica. El propósito de
+esta ejecución es mantener una copia de seguridad de /var/www/ en caso de que la máquina 1 falle.
 
 ![captura 4](https://github.com/aliavc96/SWAP/blob/master/practicas/practica2/cron.PNG)
+
 
 ![captura 4](https://github.com/aliavc96/SWAP/blob/master/practicas/practica2/cronFuncionando.PNG)
 
