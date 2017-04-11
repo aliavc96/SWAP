@@ -5,9 +5,11 @@
 
 **Pasos a seguir**:
 
-En la maquina 3 (que es la que hará de balanceador de carga) no debe instalarse apache, pues lo que vamos a instalar es un software de balancelo, que lo que va a hacer es estar escuchando en el puerto 80 peticiones web, de modo que va a recoger una petición y la va a derivar a las máquinas servidoras finales. Estas máquinas finales lo que harán es devolver la respuesta al balanceador de modo que este lo envia a su "destino".
+En la maquina 3 (que es la que hará de balanceador de carga) no debe contener Apache, pues se va a instalar un software de balanceo,
+que lo que va a hacer es estar escuchando en el puerto 80 peticiones web, de modo que va a recoger una petición y la va a derivar a las
+máquinas servidoras finales. Estas máquinas finales devolverán la respuesta al balanceador de modo que este lo envia a su "destino".
 
-Además el balanceador oculta (protege) los servidores finales.
+Además el balanceador oculta (protege) a los servidores finales.
 
 Tenemos que instalar:
 - Apache (mod_proxy)
@@ -16,11 +18,11 @@ Tenemos que instalar:
 
 ## Balanceador de carga Nginx
 
-- Con nginx tras hacer un curl a la ip del balanceador, nos dará la bienvenida.
+Con nginx tras hacer un curl a la ip del balanceador, nos dará la bienvenida.
 
 En el archivo de configuración /etc/nginx/nginx.conf:
-	- Include 1 --> hace refenrencia al balanceador de carga
-	- Include 2 --> hace referecia al servidor web.
+- Include 1 --> hace refenrencia al balanceador de carga
+- Include 2 --> hace referecia al servidor web.
 
 En caso de que nos de problemas, tendremos que comentar el include del servidor web
 
@@ -29,7 +31,7 @@ Una vez terminado de configurar:
 `service nginx restart`
 
 Haciendo de nuevo el curl ip_balanceador nos debe responder como debe.
-Para esta practica deberemos retroceder a la práctica 2 y comentar lo que pusimos en el archivo crontab para que los servidores no sean
+También deberemos retroceder a la práctica 2 y comentar lo que pusimos en el archivo crontab para que los servidores no sean
 "maestro-esclavo" sino independientes.
 
 
@@ -39,8 +41,7 @@ Para esta practica deberemos retroceder a la práctica 2 y comentar lo que pusim
 Para aclarar un poco lo que se muestra en la imagen, la ip de mi balanceador de carga
 se corresponde con la 10.0.2.8, la ip de mi primer servidor es la 10.0.2.7 y la de mi segundo servidor se corresponde con 10.0.2.15
 
-Para comprobar el rendimiento de de Nginx voy ha utilizar Apache Benchmark en un Ubuntu que no serán ni el de los servidores ni el del
-balanceador de carga.
+Para comprobar el rendimiento de de Nginx voy ha utilizar Apache Benchmark en Ubuntu 16.04.
 Con respecto a la configuración de Nginx, he dejado la que tenía por defecto, es decir, con el algoritmo Round Robin y con la misma
 carga asignada a ambos servidores. Hago esto porque los servidores tienen las mismas características (uno es un clon del otro).
 
@@ -50,19 +51,13 @@ Con la orden
 
 `ab -n 18900 -c 350 http://10.0.2.8/index.html`
 
-
-
-
 This is ApacheBench, Version 2.3 <$Revision: 1706008 $>
 
 Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
 
 Licensed to The Apache Software Foundation, http://www.apache.org/
 
-
-
 Benchmarking 10.0.2.8 (be patient)
-
 
 
 Server Software:        nginx/1.10.0
@@ -71,11 +66,9 @@ Server Hostname:        10.0.2.8
 
 Server Port:            80
 
-
 Document Path:          /index.html
 
 Document Length:        53 bytes
-
 
 Concurrency Level:      350
 
@@ -113,7 +106,7 @@ Total:         60  170 564.8     72   15832
 ## Balanceador de carga HaProxy
 
 
-Con respecto al balanceador de carga HaProxy, he intentado que su configuración sea lo más parecida posible a la configuración por defecto de Nginx
+Con respecto al balanceador de carga HaProxy, he intentado que su configuración sea lo más parecida posible a la configuración por defecto de Nginx.
 
 ![captura 2](https://github.com/aliavc96/SWAP/blob/master/practicas/practica3/funcionamientoHaProxy.PNG)
 
@@ -161,13 +154,13 @@ Total:         61  151  12.7    151     230
 
 ## Zen Load Balancer
 
-Para la configuración de Zen he cargado la ISO en una máquina virtual (VirtualBox), con 1024 MB de RAM, 20 GB de disco duro reservado de
-forma dinámica. Además la he añadido a la red NAT donde se encuentran los servidores y un Ubuntu.
+Para la configuración de Zen, he cargado la ISO en una máquina virtual (VirtualBox), con 1024 MB de RAM, 20 GB de disco duro reservado
+de forma dinámica. Además la he añadido a la red NAT donde se encuentran los servidores y Ubuntu 16.04.
 
 Durante la intalación, le he puesto una IP fija que ha sido la 10.0.2.10, de modo que no me coincidiese con ninguna de las máquinas
 conectadas a la red NAT.
 Una vez instalada, he accedido a la interfaz web a través del link: http://10.0.2.10:444. Obviamente esta interfaz creada para la
-configuración de Zen se encuentra protegida, aunque el usuario y contraseña que tiene por defecto es admin y admin.
+configuración de Zen se encuentra protegida, aunque **el usuario y contraseña que tiene por defecto es admin y admin**.
 
 ![captura 3](https://github.com/aliavc96/SWAP/blob/master/practicas/practica3/InterfazGraficaZen.PNG)
 
@@ -177,7 +170,7 @@ Posteriormente he creado una granja web
 ![captura 4](https://github.com/aliavc96/SWAP/blob/master/practicas/practica3/creacionGranjaWeb.PNG)
 
 
-y le he añadido los dos servidores, además he tratado de llevar a cabo una configuración lo más parecida posible al del resto de
+y le he añadido los dos servidores. Además he tratado de llevar a cabo una configuración lo más parecida posible al del resto de
 balanceadores de carga que he probado, como se puede ver en la imagen:
 
 ![captura 5](https://github.com/aliavc96/SWAP/blob/master/practicas/practica3/configuracionGranjaWeb.PNG)
@@ -200,8 +193,6 @@ Licensed to The Apache Software Foundation, http://www.apache.org/
 
 
 Benchmarking 10.0.2.10 (be patient)
-
-
 
 Server Software:        Apache/2.4.18
 
@@ -279,7 +270,6 @@ Solo editamos la parte final, que quedaría así:
 		End
 
 Para arrancar pound utilizamos la siguiente orden:
-
 
 `sudo service pound start`
 
