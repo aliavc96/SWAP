@@ -1,0 +1,45 @@
+Comando utilizado: ab -n 18900 -c 350 http://10.0.2.10/index.html > /home/aliavc96/Escritorio/pruebaApacheBenchmarZen
+
+This is ApacheBench, Version 2.3 <$Revision: 1706008 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.0.2.10 (be patient)
+
+
+Server Software:        Apache/2.4.18
+Server Hostname:        10.0.2.10
+Server Port:            80
+
+Document Path:          /index.html
+Document Length:        49 bytes
+
+Concurrency Level:      350
+Time taken for tests:   6.284 seconds
+Complete requests:      18900
+Failed requests:        9531
+   (Connect: 0, Receive: 0, Length: 9531, Exceptions: 0)
+Total transferred:      5613624 bytes
+HTML transferred:       964224 bytes
+Requests per second:    3007.73 [#/sec] (mean)
+Time per request:       116.367 [ms] (mean)
+Time per request:       0.332 [ms] (mean, across all concurrent requests)
+Transfer rate:          872.41 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0   41 200.0      7    3024
+Processing:     4   70  66.3     71    1856
+Waiting:        3   70  66.3     71    1856
+Total:          7  111 220.0     78    3537
+
+Percentage of the requests served within a certain time (ms)
+  50%     78
+  66%     91
+  75%     98
+  80%    102
+  90%    112
+  95%    288
+  98%   1091
+  99%   1108
+ 100%   3537 (longest request)

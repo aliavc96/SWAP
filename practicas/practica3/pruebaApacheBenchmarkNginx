@@ -1,0 +1,47 @@
+
+
+Con la orden ab -n 18900 -c 350 http://10.0.2.8/index.html
+
+This is ApacheBench, Version 2.3 <$Revision: 1706008 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.0.2.8 (be patient)
+
+
+Server Software:        nginx/1.10.0
+Server Hostname:        10.0.2.8
+Server Port:            80
+
+Document Path:          /index.html
+Document Length:        53 bytes
+
+Concurrency Level:      350
+Time taken for tests:   16.119 seconds
+Complete requests:      18900
+Failed requests:        9450
+   (Connect: 0, Receive: 0, Length: 9450, Exceptions: 0)
+Total transferred:      5594400 bytes
+HTML transferred:       963900 bytes
+Requests per second:    1172.53 [#/sec] (mean)
+Time per request:       298.500 [ms] (mean)
+Time per request:       0.853 [ms] (mean, across all concurrent requests)
+Transfer rate:          338.93 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0   76 439.3      0    7018
+Processing:    35   94 286.6     72   12843
+Waiting:       35   94 286.6     72   12842
+Total:         60  170 564.8     72   15832
+
+Percentage of the requests served within a certain time (ms)
+  50%     72
+  66%     75
+  75%     77
+  80%     78
+  90%     89
+  95%   1062
+  98%   1271
+  99%   2673
+ 100%  15832 (longest request)
