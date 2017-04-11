@@ -315,7 +315,7 @@ Probando el rendimiento de Pound con Apache Benchmark:
 
 Puedo decir que a pesar de que influyen muchos aspectos externos a los balanceadores de carga instalados, pues yo me encuentro
 trabajando en Windows 10, y empleo máquinas virtuales para comprobar el funcionamiento de estos balanceadores, obtenemos que el que
-mejores resultados ha dado ha sido Zen Load Balancer.
+mejores resultados provienen Zen Load Balancer.
 
 
 
