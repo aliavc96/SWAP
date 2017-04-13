@@ -1,15 +1,15 @@
 
 
-# Documentación para la práctica 3: Balanceadores de Carga
+# Documentaciï¿½n para la prï¿½ctica 3: Balanceadores de Carga
 
 
 **Pasos a seguir**:
 
-En la maquina 3 (que es la que hará de balanceador de carga) no debe contener Apache, pues se va a instalar un software de balanceo,
-que lo que va a hacer es estar escuchando en el puerto 80 peticiones web, de modo que va a recoger una petición y la va a derivar a las
-máquinas servidoras finales. Estas máquinas finales devolverán la respuesta al balanceador de modo que este lo envia a su "destino".
+La maquina 3 (que es la que harï¿½ de balanceador de carga) no debe contener Apache, pues se va a instalar un software de balanceo,
+su funciÃ³n es estar escuchando en el puerto 80 peticiones web, de modo que va a recoger una peticiï¿½n y la va a derivar a las
+mï¿½quinas servidoras finales. Estas mï¿½quinas finales devolverï¿½n la respuesta al balanceador de modo que Ã©ste lo enviarÃ¡ a su "destino".
 
-Además el balanceador oculta (protege) a los servidores finales.
+Ademï¿½s el balanceador oculta (protege) a los servidores finales.
 
 Tenemos que instalar:
 - Apache (mod_proxy)
@@ -18,20 +18,20 @@ Tenemos que instalar:
 
 ## Balanceador de carga Nginx
 
-Con nginx tras hacer un curl a la ip del balanceador, nos dará la bienvenida.
+Con nginx tras hacer un curl a la ip del balanceador, nos darï¿½ la bienvenida.
 
-En el archivo de configuración /etc/nginx/nginx.conf:
+En el archivo de configuraciï¿½n /etc/nginx/nginx.conf tenemos los siguientes includes:
 - Include 1 --> hace refenrencia al balanceador de carga
 - Include 2 --> hace referecia al servidor web.
 
 En caso de que nos de problemas, tendremos que comentar el include del servidor web
 
-Una vez terminado de configurar: 
+Una vez terminado de configurar procedemos a reiniciarlo: 
 
 `service nginx restart`
 
 Haciendo de nuevo el curl ip_balanceador nos debe responder como debe.
-También deberemos retroceder a la práctica 2 y comentar lo que pusimos en el archivo crontab para que los servidores no sean
+Tambiï¿½n deberemos retroceder a la prï¿½ctica 2 y comentar lo que pusimos en el archivo crontab para que los servidores no sean
 "maestro-esclavo" sino independientes.
 
 
@@ -41,9 +41,9 @@ También deberemos retroceder a la práctica 2 y comentar lo que pusimos en el arc
 Para aclarar un poco lo que se muestra en la imagen, la ip de mi balanceador de carga
 se corresponde con la 10.0.2.8, la ip de mi primer servidor es la 10.0.2.7 y la de mi segundo servidor se corresponde con 10.0.2.15
 
-Para comprobar el rendimiento de de Nginx voy ha utilizar Apache Benchmark en Ubuntu 16.04.
-Con respecto a la configuración de Nginx, he dejado la que tenía por defecto, es decir, con el algoritmo Round Robin y con la misma
-carga asignada a ambos servidores. Hago esto porque los servidores tienen las mismas características (uno es un clon del otro).
+Para comprobar el rendimiento de Nginx voy ha utilizar Apache Benchmark en Ubuntu 16.04.
+Con respecto a la configuraciï¿½n de Nginx, he dejado la que tenï¿½a por defecto, es decir, con el algoritmo Round Robin y con la misma
+carga asignada a ambas mÃ¡quinas. Hago esto porque los servidores tienen las mismas caracterï¿½sticas (uno es un clon del otro).
 
 Estos han sido los resultados obtenidos con Apache Benchmark:
 
@@ -106,11 +106,11 @@ Total:         60  170 564.8     72   15832
 ## Balanceador de carga HaProxy
 
 
-Con respecto al balanceador de carga HaProxy, he intentado que su configuración sea lo más parecida posible a la configuración por defecto de Nginx.
+Con respecto al balanceador de carga HaProxy, he intentado que su configuraciï¿½n sea lo mï¿½s parecida posible a la configuraciï¿½n por defecto de Nginx.
 
 ![captura 2](https://github.com/aliavc96/SWAP/blob/master/practicas/practica3/funcionamientoHaProxy.PNG)
 
-He lanzado el apacheBenchmark con los mismos parámetros que he utilizado para comprobar el funcionamiento de nginx:
+He lanzado Apache Benchmark con los parï¿½metros que he utilizado para comprobar el funcionamiento de nginx:
 
 Con la orden 
 
@@ -125,42 +125,60 @@ Benchmarking 10.0.2.8 (be patient)
 
 
 Server Software:        Apache/2.4.18
+
 Server Hostname:        10.0.2.8
+
 Server Port:            80
 
 Document Path:          /index.html
+
 Document Length:        49 bytes
+
 
 Concurrency Level:      350
 Time taken for tests:   8.252 seconds
+
 Complete requests:      18900
+
 Failed requests:        9305
+
    (Connect: 0, Receive: 0, Length: 9305, Exceptions: 0)
+   
 Total transferred:      5612720 bytes
+
 HTML transferred:       963320 bytes
+
 Requests per second:    2290.39 [#/sec] (mean)
+
 Time per request:       152.812 [ms] (mean)
+
 Time per request:       0.437 [ms] (mean, across all concurrent requests)
+
 Transfer rate:          664.23 [Kbytes/sec] received
 
 Connection Times (ms)
+
               min  mean[+/-sd] median   max
+			  
 Connect:        0    3   5.6      2      63
+
 Processing:    17  149  14.2    148     212
+
 Waiting:       17  148  14.1    148     211
+
 Total:         61  151  12.7    151     230
 
 
 
 ## Zen Load Balancer
 
-Para la configuración de Zen, he cargado la ISO en una máquina virtual (VirtualBox), con 1024 MB de RAM, 20 GB de disco duro reservado
-de forma dinámica. Además la he añadido a la red NAT donde se encuentran los servidores y Ubuntu 16.04.
+Para la configuraciï¿½n de Zen, he cargado la ISO en una mï¿½quina virtual (VirtualBox), con 1024 MB de RAM, 20 GB de disco duro reservado
+de forma dinï¿½mica. Ademï¿½s la he aï¿½adido a la red NAT donde se encuentran los servidores y Ubuntu 16.04.
 
-Durante la intalación, le he puesto una IP fija que ha sido la 10.0.2.10, de modo que no me coincidiese con ninguna de las máquinas
+Durante la intalaciï¿½n, le he puesto una IP fija que ha sido la 10.0.2.10, de modo que no me coincidiese con ninguna de las mï¿½quinas
 conectadas a la red NAT.
-Una vez instalada, he accedido a la interfaz web a través del link: http://10.0.2.10:444. Obviamente esta interfaz creada para la
-configuración de Zen se encuentra protegida, aunque **el usuario y contraseña que tiene por defecto es admin y admin**.
+Una vez instalada, he accedido a la interfaz web a travï¿½s del link: http://10.0.2.10:444. Obviamente esta interfaz creada para la
+configuraciï¿½n de Zen se encuentra protegida, aunque **el usuario y contraseï¿½a que tiene por defecto es admin y admin**.
 
 ![captura 3](https://github.com/aliavc96/SWAP/blob/master/practicas/practica3/InterfazGraficaZen.PNG)
 
@@ -170,13 +188,13 @@ Posteriormente he creado una granja web
 ![captura 4](https://github.com/aliavc96/SWAP/blob/master/practicas/practica3/creacionGranjaWeb.PNG)
 
 
-y le he añadido los dos servidores. Además he tratado de llevar a cabo una configuración lo más parecida posible al del resto de
+y le he aï¿½adido los dos servidores. Ademï¿½s he tratado de llevar a cabo una configuraciï¿½n lo mï¿½s parecida posible al del resto de
 balanceadores de carga que he probado, como se puede ver en la imagen:
 
 ![captura 5](https://github.com/aliavc96/SWAP/blob/master/practicas/practica3/configuracionGranjaWeb.PNG)
 
-Después de configurar la granja web, la he levantado y he hecho el test del Apache Benchmark desde un Ubuntu con las mismas opciones que
-para el resto de balanceadores que he probado. Aquí los resultados:
+Despuï¿½s de configurar la granja web, la he levantado y he hecho el test del Apache Benchmark desde un Ubuntu con las mismas opciones que
+para el resto de balanceadores que he probado. Aquï¿½ los resultados:
 
 Orden utilizada: 
 
@@ -241,13 +259,13 @@ Total:          7  111 220.0     78    3537
 
 ## Balanceador de Carga Pound
 
-Aclarar que este balanceador ha sido probado por mi compañero Antonio Campoy, y tanto las pruebas como la documentación de este apartado
+Aclarar que este balanceador ha sido probado por mi compaï¿½ero Antonio Campoy, y tanto las pruebas como la documentaciï¿½n de este apartado
 son suyas.
 
 
-Una vez instalado configuramos pound editando el archivo de configuración /etc/pound/pound.conf.
+Una vez instalado configuramos pound editando el archivo de configuraciï¿½n /etc/pound/pound.conf.
 
-Solo editamos la parte final, que quedaría así:
+Solo editamos la parte final, que quedarï¿½a asï¿½:
 
 		ListenHTTP
 			Address ipBALANCEADOR
@@ -274,8 +292,8 @@ Para arrancar pound utilizamos la siguiente orden:
 `sudo service pound start`
 
 Al principio he tenido un problema, pues no me arrancaba cuando lo iniciaba. Al parecer en el fichero /etc/default/pound hay una
-variable startup, que yo tenía a 0, la he puesto a 1, y al reiniciar la máquina directamente ha iniciado pound (por suerte ya que cuando
-arrancamos la máquina si no hemos quitado los ficheros de inicio se produce 'una guerra' entre los balanceadores instalados).
+variable startup, que yo tenï¿½a a 0, la he puesto a 1, y al reiniciar la mï¿½quina directamente ha iniciado pound (por suerte ya que cuando
+arrancamos la mï¿½quina si no hemos quitado los ficheros de inicio se produce 'una guerra' entre los balanceadores instalados).
 
 Una vez lanzado comprobamos que funciona:
 
@@ -301,10 +319,10 @@ Probando el rendimiento de Pound con Apache Benchmark:
 
 
 
-## Conclusión final
+## Conclusiï¿½n final
 
 Puedo decir que a pesar de que influyen muchos aspectos externos a los balanceadores de carga instalados, pues yo me encuentro
-trabajando en Windows 10, y empleo máquinas virtuales para comprobar el funcionamiento de estos balanceadores, obtenemos que el que
+trabajando en Windows 10, y empleo mï¿½quinas virtuales para comprobar el funcionamiento de estos balanceadores, obtenemos que los
 mejores resultados provienen Zen Load Balancer.
 
 
