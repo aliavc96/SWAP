@@ -72,7 +72,7 @@ Document Length:        53 bytes
 
 Concurrency Level:      350
 
-Time taken for tests:   16.119 seconds
+**Time taken for tests:   16.119 seconds**
 
 Complete requests:      18900
 
@@ -136,7 +136,7 @@ Document Length:        49 bytes
 
 
 Concurrency Level:      350
-Time taken for tests:   8.252 seconds
+**Time taken for tests:   8.252 seconds**
 
 Complete requests:      18900
 
@@ -193,8 +193,8 @@ balanceadores de carga que he probado, como se puede ver en la imagen:
 
 ![captura 5](https://github.com/aliavc96/SWAP/blob/master/practicas/practica3/configuracionGranjaWeb.PNG)
 
-Después de configurar la granja web, la he levantado y he hecho el test del Apache Benchmark desde un Ubuntu con las mismas opciones que
-para el resto de balanceadores que he probado. Aquí los resultados:
+Después de configurar la granja web, la he levantado y he hecho el test del Apache Benchmark desde un Ubuntu con las mismas opciones utilizadas
+para el resto de balanceadores. Aquí los resultados:
 
 Orden utilizada: 
 
@@ -226,7 +226,7 @@ Document Length:        49 bytes
 
 Concurrency Level:      350
 
-Time taken for tests:   6.284 seconds
+**Time taken for tests:   6.284 seconds**
 
 Complete requests:      18900
 
