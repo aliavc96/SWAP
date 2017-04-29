@@ -14,7 +14,7 @@ máquina donde he introducido el comando.
 ![captura 1](https://github.com/aliavc96/SWAP/blob/master/practicas/practica2/pruebascp.PNG)
 
 Para establecer la configuración de ssh sin clave:
-En el caso de generar la clave pÃºblica y privada, yo he utilizado el algoritmo de encriptaciÃ³n RSA:
+En el caso de generar la clave pública y privada, yo he utilizado el algoritmo de encriptación RSA:
 
 `ssh-keygen -t -rsa`
 
