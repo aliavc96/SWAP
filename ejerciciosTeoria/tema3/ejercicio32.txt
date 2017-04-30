@@ -1,0 +1,23 @@
+Buscar con qué órdenes de terminal o herramientas gráficas
+podemos configurar bajo Windows y bajo Linux el filtrado
+y bloqueo de paquetes. 
+
+Para llevar a cabo el filtrado de paquetes podemos utilizar Wireshark. Esta herramienta proporciona una interfaz gráfica que permite ver todo el tráfico que pasa
+a través de una red (usualmente una red Ethernet, aunque es compatible con algunas 
+otras) estableciendo la configuración en modo promiscuo.
+Permite examinar datos de una red viva o de un archivo de captura salvado en disco. Se puede analizar la información capturada, a través de los detalles y sumarios por cada 
+paquete. Wireshark incluye un completo lenguaje para filtrar lo que queremos ver y la habilidad de mostrar el flujo reconstruido de una sesión de TCP.
+Wireshark es software libre, y se ejecuta sobre la mayoría de sistemas operativos Unix y compatibles, incluyendo Linux, Solaris, FreeBSD, NetBSD, OpenBSD, Android, y Mac OS 
+X, así como en Microsoft Windows.
+
+Para bloquear determinados paquetes basta con llevar a cabo la configuración del firewall. El kernel de Linux incluye un firewall llamado IPtables.
+Por ejemplo para bloquear el tráfico procedente de una determinada IP utilizamos:
+
+iptables -A INPUT -p tcp -m iprange –src-range 192.168.1.13-192.168.2.19 (ejemplo de 
+IP) 
+
+
+Fuentes:
+https://es.wikipedia.org/wiki/Wireshark
+https://www.redeszone.net/gnu-linux/iptables-configuracion-del-firewall-en-linux-con-
+iptables/

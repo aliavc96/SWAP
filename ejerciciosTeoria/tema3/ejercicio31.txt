@@ -1,0 +1,15 @@
+Buscar con qué órdenes de terminal o herramientas gráficas
+podemos configurar bajo Windows y bajo Linux el
+enrutamiento del tráfico de un servidor para pasar el
+tráfico desde una subred a otra. 
+
+Esto se lleva a cabo con las tablas de enrutamiento que pueden ser configuradas con Winbox, una aplicación para entornos Windows. Winbox es una pequeña utilidad que te 
+permite la administración de Mikrotik RouterOs usando una interfaz gráfica de usuario 
+fácil y simple. Es un binario Win32 nativo, pero lo puedes ejecutar en Linux y Mac OSX usando Wine. Para probar su funcionalidad en sistemas Linux hacemos lo siguiente:
+
+sudo apt-get install wine
+wine <path_to_winbox.exe>/winbox.exe
+
+Información obtenida de fuentes de la asignatura Fundamentos de Redes y
+del siguiente enlace: http://configurarmikrotikwireless.com/blog/de-que-se-trata-
+winbox.html
