@@ -1,0 +1,18 @@
+#!/bin/bash
+
+/usr/bin/suricata -c /etc/suricata/suricata.yaml -i enp0s3 &
+
+tam=`cat /var/log/suricata/fast.log | wc -c`
+while :
+do 
+	tam2=`cat /var/log/suricata/fast.log | wc -c`
+	#echo el tamaño de tam1: $tam
+	#echo El tamaño de tam2: $tam2
+	if [ "$tam2" != "$tam" ]
+	then
+		tail -n 2 /var/log/suricata/fast.log 
+		tam=$tam2
+	fi
+
+done
+
