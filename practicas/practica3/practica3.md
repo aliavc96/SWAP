@@ -178,8 +178,9 @@ de forma dinámica. Además la he añadido a la red NAT donde se encuentran los 
 
 Durante la intalación, le he puesto una IP fija que ha sido la 10.0.2.10, de modo que no me coincidiese con ninguna de las máquinas
 conectadas a la red NAT.
-Una vez instalada, he accedido a la interfaz web a través del link: http://10.0.2.10:444. Obviamente esta interfaz creada para la
+Una vez instalada, he accedido a la interfaz web a través del link: https://10.0.2.10:444. Obviamente esta interfaz creada para la
 configuración de Zen se encuentra protegida, aunque **el usuario y contraseña que tiene por defecto es admin y admin**.
+Es importante acceder a la interfaz con el protocolo http de seguridad, pues si no, no tendremos permitido el acceso.
 
 ![captura 3](https://github.com/aliavc96/SWAP/blob/master/practicas/practica3/InterfazGraficaZen.PNG)
 
