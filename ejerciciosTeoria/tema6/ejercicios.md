@@ -8,6 +8,7 @@ Aplicar con iptables una política de permitir todo el tráfico en una de las máqu
 Comprobar el funcionamiento.**
 
 Para denegar el tráfico con **iptables** basta con aplicar estos comandos:
+
 `iptables -P INPUT DROP`
 
 `iptables -P OUTPUT DROP`
@@ -28,7 +29,9 @@ Para dejar pasar todo el tráfico basta con deshacernos de las reglas aplicadas e
 demonio lo ocupa.**
 
 Para ello podemos aplicar la siguiente orden: 
+
 `sudo nmap localhost`
+
 para ver los puertos abiertos (pero no a internet)
 Para ver los puertos abiertoa hacia internet.
 
