@@ -7,8 +7,8 @@
 **¿Qué tamaño de unidad de unidad RAID se obtendrá al configurar un RAID 0 a partir de tres discos de 200 GB
 cada uno?**
 
-Tanto en el primer como en el segundo caso, el tamaño del Raid será la suma de los tamaños de los discos, o sea 200
-y 400 GB.
+Tanto en el primer como en el segundo caso, el tamaño del Raid será la suma de los tamaños de los discos (raid 0), o sea 200
+y 600 GB.
 
 
 ### Ejercicio 7.2
