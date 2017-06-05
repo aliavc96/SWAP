@@ -32,8 +32,9 @@ Para ello podemos aplicar la siguiente orden:
 
 `sudo nmap localhost`
 
-para ver los puertos abiertos (pero no a internet)
-Para ver los puertos abiertoa hacia internet.
+para ver los puertos abiertos (pero no a internet).
+
+Para ver los puertos abiertoa hacia internet:
 
 `sudo nmap IPSERVER`
 
